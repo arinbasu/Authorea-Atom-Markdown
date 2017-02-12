@@ -72,7 +72,8 @@
 <p>The easiest way in Authorea is to &quot;set up the github connection automatically&quot;. Then visit github your own repository (you have to get a username) and clone this repository locally. The code to do that in your terminal is as follows:</p>
 </div>
 <div>
-<p><code>git clone &lt;URL to be cloned&gt;</code> ## Write Markdown locally and convert the document to HTML</p>
+<p><code>git clone &lt;URL to be cloned&gt;</code></p>
+<h2 id="write-markdown-locally-and-convert-the-document-to-html">Write Markdown locally and convert the document to HTML</h2>
 </div>
 <div>
 <p>Two steps here:</p>
@@ -89,7 +90,7 @@
 <p>Markdown is an easy web enabled writing system. John Gruber, a blogger and web commenter invented this and its documentation can be found in his website. This system has now been expanded to include tables and citations. In order to interface with Authorea HTML however, you need to use the Pandoc flavoured markdown where you write tables with pipe symbols, and add citations using the same way as you would write citations in LaTeX but with the following code for citations:</p>
 </div>
 <div>
-<p><code>&lt;cite classs=&quot;ltx_cite raw v1&quot;&gt;\\cite{citationID}&lt;/cite&gt;</code></p>
+<p><code>&lt;cite class=&quot;ltx_cite raw v1&quot;&gt;\\cite{citationID}&lt;/cite&gt;</code></p>
 <p>Note the two black slashes. The style statement is specific to Authorea. There are other ways to write for citations (see Pandoc documentation). So if you want to add a citation:</p>
 </div>
 <ol style="list-style-type: decimal">
@@ -109,7 +110,8 @@
 <p>Code for conversion from html to markdown</p>
 </div>
 <div>
-<p><code>pandoc main.html -f html -t markdown --parse-raw -o main.md</code> A few points, note the output flag. You can change the output file name to something else.</p>
+<p><code>pandoc main.html -f html -t markdown --parse-raw -o main.md</code></p>
+<p>A few points, note the output flag. You can change the output file name to something else.</p>
 </div>
 <h2 id="interact-with-authorea">Interact with Authorea</h2>
 <div>
